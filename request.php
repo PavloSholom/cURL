@@ -1,8 +1,8 @@
 <?php
 
 
-  if ($_POST['send'] != "" && $_POST['send'] == 'send'){
-    $ch = curl_init("http://www.example.com/");
+  if ($_GET['button_send'] != "" && $_GET['button_send'] == 'button_send'){
+    $ch = curl_init($_GET['url']);
     $fp = fopen("example_homepage.txt", "w");
 
     curl_setopt($ch, CURLOPT_FILE, $fp);
