@@ -1,5 +1,5 @@
 <?php
-  require_once '/request.php';
+  include '/request.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,17 +13,23 @@
   <body >
 
 
-    <div class="form-group">
-      <label for="cURL" class="cols-sm-2 ">cURL-запит</label>
-      <div class="">
-        <div class="input-group">
-          <span class="input-group-addon"><i class="fa fa fa-send fa" aria-hidden="true"></i></span>
-          <input type="text" class="form-control" name="cURL" id="cURL" placeholder="Введіть запит"/>
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label for="cURL" class="cols-sm-2 ">cURL-запит</label>
+        <div class="">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-send" aria-hidden="true"></i></span>
+            <input type="text" class="form-control" name="cURL" id="cURL" placeholder="Введіть запит"/>
+          </div>
         </div>
       </div>
+      <div class="form-group">
+  			<button id="send" type="button" class="btn btn-primary btn-lg">Надіслати</button>
+  		</div>
     </div>
 
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="/js/request.js"></script>
   </body>
 </html>
