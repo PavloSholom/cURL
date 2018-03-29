@@ -10,7 +10,100 @@ body{
 	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
 }
 
-label {
+
+#form .button_row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 5px;
+}
+#form label {
   font-size: 12px;
   font-weight: normal;
+  margin-bottom: 5px;
+}
+
+#form .radio_row  {
+  display: flex;
+}
+
+#form .radio_row input {
+  margin-top: 0;
+}
+
+#form .radio_row label, #form .button_row label {
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0 15px 0 5px
+}
+
+#form .radio_group{
+  display: flex;
+  align-items: center;
+}
+
+#form .select_group {
+  display: flex;
+}
+#form .select_group > div:nth-child(1) {
+  width: 50%;
+  margin-right: 15px;
+}
+#form .select_group > div:nth-child(2) {
+  width: 50%;
+  margin-left: 15px;
+}
+
+#form .btn-group, .multiselect {
+
+}
+#form .dropdown-menu>li>a,
+#form .dropdown-menu>.active>a,
+#form .dropdown-menu>.active>a:hover,
+#form .dropdown-menu>.active>a:focus {
+  padding:0;
+}
+#form .multiselect-container>li>a>label {
+  padding: 0px 10px 0px 30px;
+  margin: 0;
+}
+#form .btn-group>.btn:first-child {
+  font-size: 12px;
+}
+#form  .dropdown-menu>.active>a,
+#form .dropdown-menu>.active>a:hover,
+#form .dropdown-menu>.active>a:focus {
+  background: #b9b7b7;
+  color: #000;
+}
+@import url("//cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css");
+.btn-group,
+.multiselect {
+  width: 100%;
+}
+
+.multiselect {
+  text-align: left;
+  padding-right: 32px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.multiselect .caret {
+  right: 12px;
+  top: 45%;
+  position: absolute;
+}
+
+.multiselect-container.dropdown-menu {
+    min-width: 0px;
+}
+
+.multiselect-container>li>a>label {
+    white-space: normal;
+    padding: 5px 15px 5px 35px;
+}
+
+.multiselect-container > li > a > label > input[type="checkbox"] {
+    margin-top: 3px;
 }
