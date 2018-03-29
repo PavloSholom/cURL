@@ -12,7 +12,6 @@
     <title>cURL</title>
   </head>
   <body >
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.min.js"></script>
 
     <div class="container">
           <div class="row centered-form">
@@ -27,18 +26,18 @@
   			    			<div class="row">
   			    				<div class="col-xs-6 col-sm-6 col-md-6">
   			    					<div class="form-group">
-  			                <input type="text" name="first_name" id="first_name" class="form-control input-sm form_input" placeholder="First Name">
+  			                <input type="text" name="first_name" id="first_name" class="form-control input-sm form_input" placeholder="First Name" value="Владислав">
   			    					</div>
   			    				</div>
   			    				<div class="col-xs-6 col-sm-6 col-md-6">
   			    					<div class="form-group">
-  			    						<input type="text" name="last_name" id="last_name" class="form-control input-sm form_input" placeholder="Last Name">
+  			    						<input type="text" name="last_name" id="last_name" class="form-control input-sm form_input" placeholder="Last Name" value="Мельник">
   			    					</div>
   			    				</div>
   			    			</div>
 
   			    			<div class="form-group">
-  			    				<input type="url" name="url" id="url" class="form-control input-sm form_input" placeholder="URL">
+  			    				<input type="url" name="url" id="url" class="form-control input-sm form_input" placeholder="URL" value="https://www.google.com/">
   			    			</div>
 
                 	<div class="form-group">
@@ -60,12 +59,7 @@
 
                       <div class="form-group">
 
-                          <select name="inputs" id="inputs_data" multiple="multiple">
-                            <option value="1">Area, Ethnic</option>
-                             <option value="2">123456</option>
-                             <option value="3">rg1r1gr1</option>
-                             <option value="4">Science</option>
-                             <option value="5">Engineering</option>
+                          <select name="inputs" id="inputs_data" multiple="multiple">                            
                           </select>
 
                       </div>
@@ -106,7 +100,8 @@
       <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
       <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
       <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.min.js"></script>
       <script src="/js/request.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.min.js"></script>
+      
   </body>
 </html>
